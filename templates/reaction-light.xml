@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ReactionLight</Name>
+  <Repository>ghcr.io/eibex/reaction-light:latest</Repository>
+  <Registry>https://github.com/eibex/reaction-light/pkgs/container/reaction-light</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/eibex/reaction-light</Project>
+  <Overview>Easy to use self-hosted reaction role Discord bot written in Python.&#xD;
+[README FIRST] How to create the bot and run it on Unraid: https://github.com/eibex/reaction-light/wiki&#xD;
+Key features:&#xD;
+- Create multiple custom embedded messages with custom reactions and roles, or use other messages and add reactionroles to them&#xD;
+- Automatically assign/remove roles to users when they select/deselect a certain reaction&#xD;
+- Optionally limit users to select one reaction (and role) at a time&#xD;
+- Use the same instance of the bot on multiple servers&#xD;
+- Easy installation, setup, and updating: no need to rely on developer mode and IDs&#xD;
+- Optional update notifications and error reporting to your own Discord server&#xD;
+- Multiple languages</Overview>
+  <Category>Tools: Status:Stable</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/eibex/unraid-templates/master/logos/reactionlight.png</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1739558553</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>
+    Requires a Discord bot user/token and config file setup (see wiki).
+  </Requires>
+  <Config Name="Files" Target="/bot/files" Default="/mnt/user/appdata/reaction-light/files" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/reaction-light/files</Config>
+  <Config Name="Config" Target="/bot/config.ini" Default="/mnt/user/appdata/reaction-light/config.ini" Mode="rw" Description="You need to create this file before creating the Docker container, else it will create a directory." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/reaction-light/config.ini</Config>
+  <TailscaleStateDir/>
+</Container>
