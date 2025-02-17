@@ -10,7 +10,7 @@
   <Support/>
   <Project>https://github.com/eibex/reaction-light</Project>
   <Overview>Easy to use self-hosted reaction role Discord bot written in Python.&#xD;
-[README FIRST] How to create the bot and run it on Unraid: https://github.com/eibex/reaction-light/wiki&#xD;
+README FIRST: How to create the bot and run it on Unraid: https://github.com/eibex/reaction-light/wiki&#xD;
 Key features:&#xD;
 - Create multiple custom embedded messages with custom reactions and roles, or use other messages and add reactionroles to them&#xD;
 - Automatically assign/remove roles to users when they select/deselect a certain reaction&#xD;
@@ -22,17 +22,18 @@ Key features:&#xD;
   <Category>Tools: Status:Stable</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/eibex/unraid-templates/master/logos/reactionlight.png</Icon>
+  <Icon>https://raw.githubusercontent.com/eibex/unraid-reaction-light/master/reactionlight.png</Icon>
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1739558553</DateInstalled>
+  <DateInstalled>1739835398</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires>
     Requires a Discord bot user/token and config file setup (see wiki).
   </Requires>
   <Config Name="Files" Target="/bot/files" Default="/mnt/user/appdata/reaction-light/files" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/reaction-light/files</Config>
-  <Config Name="Config" Target="/bot/config.ini" Default="/mnt/user/appdata/reaction-light/config.ini" Mode="rw" Description="You need to create this file before creating the Docker container, else it will create a directory." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/reaction-light/config.ini</Config>
+  <Config Name="Config" Target="/bot/config" Default="/mnt/user/appdata/reaction-light/config" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/reaction-light/config</Config>
+  <Config Name="Discord Bot Token" Target="TOKEN" Default="" Mode="" Description="Only considered on first run. Your Discord Bot Token from the Discord Developer Portal, see the wiki for instructions: https://github.com/eibex/reaction-light/wiki" Type="Variable" Display="always" Required="false" Mask="false"/>
   <TailscaleStateDir/>
 </Container>
