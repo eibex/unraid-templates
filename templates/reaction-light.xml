@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://github.com/eibex/reaction-light/issues</Support>
   <Project>https://github.com/eibex/reaction-light</Project>
   <Overview>Easy to use self-hosted reaction role Discord bot written in Python.&#xD;
 README FIRST: How to create the bot and run it on Unraid: https://github.com/eibex/reaction-light/wiki&#xD;
