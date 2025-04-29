@@ -22,7 +22,7 @@ Key features:&#xD;
   <Category>Tools: Status:Stable</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/eibex/unraid-reaction-light/master/reactionlight.png</Icon>
+  <Icon>https://raw.githubusercontent.com/eibex/unraid-templates/refs/heads/master/logos/reactionlight.png</Icon>
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
